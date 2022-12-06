@@ -1,0 +1,30 @@
+
+.filter_wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    transition:all 1s ease-in-out;
+    left: 0;
+    z-index: 100;
+}
+.filter_container{
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+    padding-top: 30px;
+}
+.category_filter{
+    padding-top:30px
+}
+.back{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.tag{
+    margin-right: 20px;
+}

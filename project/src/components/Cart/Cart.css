@@ -1,0 +1,90 @@
+
+.cart_window{
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    transition:all 1s ease-in-out;
+    left: 0;
+}
+.cart_container{
+    width: 400px;
+    height: auto;
+    background-color: white;
+    float: right;
+    position: relative;
+}
+.top{
+    padding: 20px 0 0 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(0,0,0,0.3);
+}
+.top > button{
+    background-color: transparent;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-right: 7px;
+    margin-top: 5px;
+}
+.top > p> span{
+    color: #0047ff;
+}
+.cart_empty{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+.bag_icon{
+    font-size: 70px;
+    margin-top: 30%;
+}
+.cart_empty > button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #0047ff;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+.cart_items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.cart_items .check_out{
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart_items .check_out > button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0047ff;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+.check_out p{
+    position: relative;
+    right: 0;
+}
