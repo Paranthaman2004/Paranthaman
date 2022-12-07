@@ -4,7 +4,7 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { useStates } from "../../States";
 import { AiFillHeart } from "react-icons/ai";
 const Product = () => {
-  const { products, setToggle,AddtoCart } = useStates();
+  const { products, setToggle, AddtoCart } = useStates();
 
   return (
     <div className="products">
@@ -13,8 +13,8 @@ const Product = () => {
           setToggle(false);
         };
         return (
-          <div className="box">
-            <img key={i} src={product.img} alt="" />
+          <div key={i} className="box">
+            <img src={product.img} alt="" />
             <div className="product_detail">
               <p>{product.pname}</p>
               <p>₹{product.price}</p>
@@ -30,10 +30,15 @@ const Product = () => {
                 <button className="buy_btn">Buy Now</button>
               </div>
               <div className="add_cart_container">
-                <button onClick={()=>AddtoCart(product)} className="add_cart">Add to Cart</button>
+                <button onClick={() => AddtoCart(product)} className="add_cart">
+                  Add to Cart
+                </button>
                 <span className="wishlist_container">
-              <AiFillHeart onClick={wishToggle} className={product.wishlist} />
-            </span>
+                  <AiFillHeart
+                    onClick={wishToggle}
+                    className={product.wishlist}
+                  />
+                </span>
               </div>
             </div>
           </div>

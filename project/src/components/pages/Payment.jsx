@@ -1,8 +1,10 @@
 import React from 'react'
-
+import CheckoutProduct from '../CheckoutProduct/CheckoutProduct'
 const Payment = () => {
   return (
-    <div>Payment</div>
+    <div>
+        <CheckoutProduct/>
+    </div>
   )
 }
 

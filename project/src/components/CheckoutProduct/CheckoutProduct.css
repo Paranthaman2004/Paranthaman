@@ -1,0 +1,97 @@
+.left_container{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    height: 90vh;
+}
+.check_product_details{
+    display: flex;
+}
+.c_box{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 85vh;
+    width: 33vw;
+    margin-right: -80px;
+    border-radius: 10px;
+}
+.check_product_details{
+    height: 120px;
+    width: 100%;
+    border:1px solid rgba(14, 30, 37, 0.22);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product_imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_imgs ul {
+    display: flex;
+}
+.product_imgs li:not(:first-child) {
+    margin-left:-25px;
+    overflow: scroll;
+}
+.product_imgs ul li img{
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}  
+
+/* 
+    import React from "react";
+
+const Nav = () => {
+    return (
+        <nav>
+            <h2>Pongal Fest</h2>
+            <h2>Movie Tickets</h2>
+        </nav>
+    )
+}
+
+export default Nav;
+nav.js
+__________________________________________
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  background-image: linear-gradient(to right, rgb(178, 30, 156) , rgb(182, 171, 171));
+  color: white;
+}
+App.css
+__________________________________________
+Manoj Kumar
+12:38 PM
+MovieContext.js
+import React, {createContext, useState} from 'react';
+
+export const MovieContext = createContext();
+
+export const MovieProvider = (props) => {
+ const [movies, setMovies] = useState([
+    {
+        name: "Thunivu",
+        price: "Rs.250",
+        id: "001",
+    },
+    {
+        name: "Varisu",
+        price: "Rs.10",
+        id: "002",
+    },
+    {
+        name: "VTK 2",
+        price: "Rs.150",
+        id: "003",
+    }
+ ]);
+ return(
+    <MovieContext.Provider value={[movies, setMovies]}>
+*/

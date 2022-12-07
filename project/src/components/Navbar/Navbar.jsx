@@ -3,18 +3,14 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { BiSearchAlt } from "react-icons/bi";
 import { HiOutlineChevronDown } from "react-icons/hi";
-import { IoNotificationsOutline } from "react-icons/io5";
-import { AiOutlineComment } from "react-icons/ai";
+import { IoNotificationsOutline,IoLocationSharp } from "react-icons/io5";
+import { AiOutlineComment,AiOutlineShoppingCart } from "react-icons/ai";
 import { BiStore } from "react-icons/bi";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import Profile from '../../asserts/profile.webp'
 import Cart from "../Cart/Cart";
 import { useStates } from "../../States";
 const Navbar = () => {
-  const {cartShow,setCartShow,totalQuatity,setTotalQuatity,cartItems} = useStates();
-    const onclick = () => {
-        setTotalQuatity(totalQuatity+1)
-    }
+  const {cartShow,setCartShow,cartItems} = useStates();
   return (
     <>
     <div className="nav">
@@ -43,10 +39,11 @@ const Navbar = () => {
                 <li><IoNotificationsOutline className="nav_icon"/></li>
                 <li><AiOutlineComment className="nav_icon"/></li>
                 <li><BiStore className="nav_icon"/></li>
+                <li><IoLocationSharp className="nav_icon"/></li>
                 <li onClick={()=>setCartShow(true)}><span className="cart_item_count">{cartItems.length}</span><AiOutlineShoppingCart className="nav_icon cart"/></li>
             </ul>
         </div>
-        <Link to="/"><div className="profile" onClick={onclick}>
+        <Link to="/"><div className="profile">
             <img src={Profile} alt="" />
         </div></Link>
         {cartShow && <Cart show={setCartShow} qty={cartItems.length} />}
